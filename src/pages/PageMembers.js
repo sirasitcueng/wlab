@@ -52,7 +52,7 @@ const PageMembers = () => {
                 <Row>
                     <Col className="d-none d-md-block" md='2' />
                     <Col xs='4' md='2'>
-                        <img alt='' src={`memberPic/0-zoom.jpg`} style={{width: '100%'}}/>
+                        <img alt='' src={`${process.env.PUBLIC_URL}/memberPic/0-zoom.jpg`} style={{width: '100%'}}/>
                     </Col>
                     <Col xs='8' md='6'>
                         <h5>{pi.title} {pi.lastname?.toUpperCase()} {pi.firstname}</h5>
@@ -76,10 +76,10 @@ const PageMembers = () => {
     const MappingData = props => {
         const { data } = props
         return data?.map((member, index) => (
-            <Col sm='12' md='6' key={index} hidden={member?.hidden || false}>
+            member?.hidden ? <></> : (<Col sm='12' md='6' key={index} hidden={member?.hidden || false}>
                 <Row>
                     <Col xs='4'>
-                        <img alt='' src={`memberPic/${member.index}.jpg`} onError={(e) => (e.currentTarget.src = `/memberPic/${member.index}.png`)} style={{maxWidth: '100%', maxHeight: '170px'}}/>
+                        <img alt='' src={`${process.env.PUBLIC_URL}/memberPic/${member.index}.jpg`} onError={(e) => (e.currentTarget.src = `${process.env.PUBLIC_URL}/memberPic/${member.index}.png`)} style={{maxWidth: '100%', maxHeight: '170px'}}/>
                     </Col>
                     <Col xs='8'>
                         <h5>{member.title} {member.lastname.toUpperCase()} {member.firstname}</h5>
@@ -96,7 +96,7 @@ const PageMembers = () => {
                 </Row>
                 
                 <br />
-            </Col>
+            </Col>)
         ))
     }
 

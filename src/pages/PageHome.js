@@ -1,6 +1,6 @@
 import { Col, Row } from "react-bootstrap"
 import Header from "../components/Header"
-import EventTable from "../components/EventTable"
+//import EventTable from "../components/EventTable"
 
 
 
@@ -33,9 +33,9 @@ const PageHome = () => {
                 </Col>
             </Row>
             <br /><br />
-            <div className="container-fluid" style={{maxWidth : '1200px'}} hidden={true}>
+            {/* <div className="container-fluid" style={{maxWidth : '1200px'}} hidden={true}>
                 <EventTable />
-            </div>
+            </div> */}
         </div>
     )
 }

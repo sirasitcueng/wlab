@@ -16,7 +16,7 @@ import PageResearch1 from "./pages/PageReserach1";
 const App = () => {
     return (
         <div>
-            <BrowserRouter>
+            <BrowserRouter basename="/wlab">
                 <Routes>
                     <Route path="/"                 element={<PageHome />}          />
                     <Route path="/pi"               element={<PagePI />}            />

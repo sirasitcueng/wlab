@@ -102,7 +102,7 @@ const PageResearch = () => {
                     <DirectionComp2 
                         title={titles[0]}
                         text={text1}
-                        image={`directions/${1}/1.png`}
+                        image={`${process.env.PUBLIC_URL}/directions/${1}/1.png`}
                         isReverse={false}
                         index={1}
                     />
@@ -113,7 +113,7 @@ const PageResearch = () => {
                     <DirectionComp2 
                         title={titles[1]}
                         text={text2}
-                        image={`directions/${2}/1.png`}
+                        image={`${process.env.PUBLIC_URL}/directions/${2}/1.png`}
                         isReverse={true}
                         index={2}
                     />
@@ -124,7 +124,7 @@ const PageResearch = () => {
                     <DirectionComp2 
                         title={titles[2]}
                         text={text3}
-                        image={`directions/${3}/1.png`}
+                        image={`${process.env.PUBLIC_URL}/directions/${3}/1.png`}
                         index={3}
                     />
                     <br />
@@ -133,7 +133,7 @@ const PageResearch = () => {
                     <DirectionComp2 
                         title={titles[3]}
                         text={text4}
-                        image={`directions/${4}/1.png`}
+                        image={`${process.env.PUBLIC_URL}/directions/${4}/1.png`}
                         isReverse={true}
                         index={4}
                     />

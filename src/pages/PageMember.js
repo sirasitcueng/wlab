@@ -45,7 +45,7 @@ const PageMember = () => {
             <Container>
                 <Row>
                     <Col sm='4'>
-                        <img alt='' src={`/memberPic/${data?.index}.jpg`} style={{width: '100%'}}/>
+                        <img alt='' src={`${process.env.PUBLIC_URL}/memberPic/${data?.index}.jpg`} style={{width: '100%'}}/>
                         <div style={{color: 'white', padding: '10px', background: 'black', textAlign: 'center'}}>
                             <span className="h4">{data?.title || ""}{data?.title?.length > 6 ? <br /> : <span>&nbsp;&nbsp;</span>}</span>
                             <span className="h1">{data?.lastname?.toUpperCase()}&nbsp;&nbsp;&nbsp;{data.firstname}</span>
@@ -74,7 +74,7 @@ const PageMember = () => {
                             ))}</ul>
                         </BlockData>}
                         <BlockData title='Contact'>
-                            <img alt='' src='/icons/email.png' style={{width: '32px'}} />{data?.email}
+                            <img alt='' src={`${process.env.PUBLIC_URL}/icons/email.png`} style={{width: '32px'}} />{data?.email}
                         </BlockData>
                     </Col>
                 </Row>

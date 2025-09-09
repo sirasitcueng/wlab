@@ -11,9 +11,9 @@ export const research1Txt = {
         "<Pending> [T-CRP] [Team PI] Enhancing superconducting qubit coherence through nanomechanical control of two-level system losses (Huang Ding/Q.InC, A*STAR, Wu Lin/SUTD, Dario Poletti/SUTD)"
     ],
     images: [
-        "directions/1/1.png",
-        "directions/1/2.png",
-        "directions/1/3.png",
+        `${process.env.PUBLIC_URL}/directions/1/1.png`,
+        `${process.env.PUBLIC_URL}/directions/1/2.png`,
+        `${process.env.PUBLIC_URL}/directions/1/3.png`,
     ]
 }
 
@@ -29,9 +29,9 @@ export const research2Txt = {
         "<Pending> [2025 MOE AcRF Tier 3] [White Paper] Ultrafast few-cycle laser-electron dynamical interaction for PHz electronics [Team PI] (Lead PI: Ricky Ang/SUTD)"
     ],
     images: [
-        "directions/2/1.png",
-        "directions/2/2.png",
-        "directions/2/3.png",
+        `${process.env.PUBLIC_URL}/directions/2/1.png`,
+        `${process.env.PUBLIC_URL}/directions/2/2.png`,
+        `${process.env.PUBLIC_URL}/directions/2/3.png`,
     ]
 }
 
@@ -45,8 +45,8 @@ export const research3Txt = {
         "[MOE AcRF Tier 2 (Feb 2025)] Time-crystals interacting with free electrons [Single PI] [Invited Resubmission] [Reduce Budget + Experimental Plan] (650K)", 
     ],
     images: [
-        "directions/3/1.png",
-        "directions/3/2.png",
+        `${process.env.PUBLIC_URL}/directions/3/1.png`,
+        `${process.env.PUBLIC_URL}/directions/3/2.png`,
     ]
 }
 
@@ -61,8 +61,8 @@ export const research4Txt = {
         "<Pending> [MOE AcRF Tier 2 (Aug 2025)] (co-PI) Beyond the ideal: multipolar design for chiral metaphotonics (Daniel Leykam/SUTD, Wu Lin/SUTD)",
     ],
     images: [
-        "directions/4/1.png",
-        "directions/4/2.png",
-        "directions/4/3.png",
+        `${process.env.PUBLIC_URL}/directions/4/1.png`,
+        `${process.env.PUBLIC_URL}/directions/4/2.png`,
+        `${process.env.PUBLIC_URL}/directions/4/3.png`,
     ]
 }
