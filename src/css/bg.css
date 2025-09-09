@@ -1,0 +1,16 @@
+.bg-cover {
+    background-image: url('/public/HOME.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    color: white;
+    padding: 30px;
+}
+
+.main-comp {
+    border-radius: 10px;
+    padding-inline: 20px;
+    padding-block: 15px;
+    background-color: white;
+}
