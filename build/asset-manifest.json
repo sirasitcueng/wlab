@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/wlab/static/css/main.242b46c5.css",
+    "main.js": "/wlab/static/js/main.d575b063.js",
+    "static/media/HOME.jpg": "/wlab/static/media/HOME.42917c018913d3bd4104.jpg",
+    "index.html": "/wlab/index.html",
+    "main.242b46c5.css.map": "/wlab/static/css/main.242b46c5.css.map",
+    "main.d575b063.js.map": "/wlab/static/js/main.d575b063.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.242b46c5.css",
+    "static/js/main.d575b063.js"
+  ]
+}
