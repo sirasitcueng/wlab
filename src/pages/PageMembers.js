@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import { fetchMembers } from "../contexts/fetchData"
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
+import FlagIcons from "../components/FlagIcons"
 //import supabase from "../contexts/db"
 
 
@@ -82,9 +83,12 @@ const PageMembers = () => {
                         <img alt='' src={`${process.env.PUBLIC_URL}/memberPic/${member.index}.jpg`} onError={(e) => (e.currentTarget.src = `${process.env.PUBLIC_URL}/memberPic/${member.index}.png`)} style={{maxWidth: '100%', maxHeight: '170px'}}/>
                     </Col>
                     <Col xs='8'>
-                        <h5>{member.title} {member.lastname.toUpperCase()} {member.firstname}</h5>
-                        <div>{member.ownlanguage}</div>
-                        {/* <div>{member.description}</div> */}
+                        <h5>{member.title}
+                            {(member?.nationality === 'cn' || member?.nationality === 'vn') ? 
+                            ` ${member.lastname.toUpperCase()} ${member.firstname}` 
+                            : ` ${member.firstname} ${member.lastname.toUpperCase()}`}
+                        </h5>
+                        <div>{member.ownlanguage}&nbsp;&nbsp;{FlagIcons[member?.nationality]}</div>
                         <ul>{member.fields?.map((f, i) => (
                             <li key={i}>{f}</li>
                         ))}</ul>

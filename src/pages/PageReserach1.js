@@ -1,6 +1,6 @@
 import { Button, Col, Row } from "react-bootstrap"
 import Header from "../components/Header"
-import { research1Txt } from "../contexts/researchData"
+import { MEMBER_INDEX, research1Txt } from "../contexts/researchData"
 import { Link } from "react-router-dom"
 
 
@@ -31,8 +31,19 @@ const PageResearch1 = () => {
                         </Row>
                         <br />
                         <div>
+                            {reserachTxt.members.map((item, index) => (
+                                <span key={index}>
+                                <Link to={`/member/${MEMBER_INDEX[item]}`} style={{ textDecoration: 'none' }}>
+                                    <Button variant="link" style={{ padding: 0 }}>
+                                        {MEMBER_INDEX[item]}
+                                    </Button>
+                                </Link>, 
+                                </span>
+                            ))}
+                        </div>
+                        <div>
                             Resources
-                            {research1Txt.references.map((item, index) => (
+                            {reserachTxt.references.map((item, index) => (
                                 <div key={index}>
                                     [{index + 1}]&nbsp;&nbsp;&nbsp;{item}
                                 </div>

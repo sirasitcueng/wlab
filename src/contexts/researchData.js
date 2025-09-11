@@ -1,3 +1,24 @@
+export const MEMBER = {
+    'LIN_WU': 0,
+    'SIRASIT_SREESAI': 1,
+    'GUANGXIN_LIU': 2,
+    'JUANFENG_ZHU': 3,
+    'YUDI_FAN': 4,
+    'DMITRII_GROMYKO': 5,
+    'WENJIE_ZHOU': 6,
+    'FANGZHOU_SHU': 7,
+    'ARNAB_LAHA': 8,
+    'CHI_WANG': 9,
+    'RENJIE_CHENG': 10,
+    'HUE_DO': 11,
+    'SERGEI_REVA': 12,
+    'XUAN_DONG': 13,
+}
+
+export const MEMBER_INDEX = Object.fromEntries(
+    Object.entries(MEMBER).map(([key, value]) => [value, key])
+);
+
 export const research1Txt = {
     title: "I. Quantum Nanophotonics: Forward & Inverse Design",
     shortenDes: "We explore advanced ways to control how light and matter interact at extremely small scales, aiming to develop next-generation technologies for quantum photonics.",
@@ -14,7 +35,8 @@ export const research1Txt = {
         `${process.env.PUBLIC_URL}/directions/1/1.png`,
         `${process.env.PUBLIC_URL}/directions/1/2.png`,
         `${process.env.PUBLIC_URL}/directions/1/3.png`,
-    ]
+    ],
+    members: [MEMBER.WENJIE_ZHOU, MEMBER.GUANGXIN_LIU],
 }
 
 export const research2Txt = {
@@ -32,7 +54,8 @@ export const research2Txt = {
         `${process.env.PUBLIC_URL}/directions/2/1.png`,
         `${process.env.PUBLIC_URL}/directions/2/2.png`,
         `${process.env.PUBLIC_URL}/directions/2/3.png`,
-    ]
+    ],
+    members: [MEMBER.HUE_DO, MEMBER.GUANGXIN_LIU, MEMBER.SIRASIT_SREESAI],
 }
 
 export const research3Txt = {
@@ -47,7 +70,8 @@ export const research3Txt = {
     images: [
         `${process.env.PUBLIC_URL}/directions/3/1.png`,
         `${process.env.PUBLIC_URL}/directions/3/2.png`,
-    ]
+    ],
+    members: [MEMBER.JUANFENG_ZHU, MEMBER.YUDI_FAN, MEMBER.RENJIE_CHENG],
 }
 
 export const research4Txt = {
@@ -64,5 +88,6 @@ export const research4Txt = {
         `${process.env.PUBLIC_URL}/directions/4/1.png`,
         `${process.env.PUBLIC_URL}/directions/4/2.png`,
         `${process.env.PUBLIC_URL}/directions/4/3.png`,
-    ]
+    ],
+    members: [MEMBER.DMITRII_GROMYKO, MEMBER.CHI_WANG, MEMBER.SERGEI_REVA],
 }
