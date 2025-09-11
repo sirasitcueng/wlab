@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wlab/static/css/main.242b46c5.css",
-    "main.js": "/wlab/static/js/main.5a678207.js",
+    "main.js": "/wlab/static/js/main.a57af1ef.js",
     "static/media/HOME.jpg": "/wlab/static/media/HOME.42917c018913d3bd4104.jpg",
     "index.html": "/wlab/index.html",
     "main.242b46c5.css.map": "/wlab/static/css/main.242b46c5.css.map",
-    "main.5a678207.js.map": "/wlab/static/js/main.5a678207.js.map"
+    "main.a57af1ef.js.map": "/wlab/static/js/main.a57af1ef.js.map"
   },
   "entrypoints": [
     "static/css/main.242b46c5.css",
-    "static/js/main.5a678207.js"
+    "static/js/main.a57af1ef.js"
   ]
 }
